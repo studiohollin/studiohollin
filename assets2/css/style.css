@@ -16,7 +16,8 @@ body {
   color: #1F3A93;
 }
 
-.pc-main{display: none;}
+.pc-main{display: block;}
+.mo-main{display: none;}
 
 
 a {
@@ -33,11 +34,8 @@ button {
 }
 
 
-/*숨겨진 모바일화면*/
 
 
-.pc-main{display: block;}
-.mo-main{display: none;}
 
 
 /* ============================= 
@@ -307,7 +305,7 @@ p {
 
 @media (max-width: 767px) {
   .hero-section-wrapper-1 .hero-style-1 .hero-content-wrapper {
-    padding: 130px 0 50px;
+    padding: 20px 0 50px;
     text-align: center;
   }
 }
