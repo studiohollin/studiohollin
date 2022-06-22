@@ -43,12 +43,14 @@ button {
 ================================ */
 
 
+@media (max-width: 430px) {
+    html, body{overflow: hidden;}}
 @media (max-width: 767px) {
+    html, body{overflow: hidden;}
 
 /*전체 컨테이너*/    
   .container {
-      padding: 0 20px;}
-      
+      padding: 0 20px;}      
   .mo-main{display: block}
   .pc-main{display: none;}
   }
