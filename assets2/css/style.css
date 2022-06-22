@@ -332,14 +332,19 @@ p {
 @media (max-width: 767px) {
 
    .hero-section-wrapper-1 .hero-style-1 .hero-content-wrapper h2{
-    font-size: 40px;
+    font-size: 30px;
     line-height: 55px;
     text-align: center;
     display: block;
     margin-bottom: 10px; 
   }
-    .shapes{display: none;}
-}
+   .shapes{display: none;
+  }
+   .hero-section-wrapper-1 .hero-style-1 .hero-content-wrapper h4{
+      font-size: 28px;}
+    }
+
+
 
 @media only screen and (min-width: 575px) and (max-width: 767px) {
   .hero-section-wrapper-1 .hero-style-1 .hero-content-wrapper h2 {
