@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>메인페이지 테스트</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="img2/favicon_icon.ico"/>
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="assets2/css/bootstrap-5.0.0-alpha-2.min.css" />
+    <link rel="stylesheet" href="assets2/css/animate.css"/>
+    <link rel="stylesheet" href="assets2/css/style.css"/>
+    <link rel="stylesheet" href="assets2/css/base-style.css"/>
+
+
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+ 
+
+ <style>
+
+
+html, body {height: 100%; margin: auto 0; overflow: hidden;}
+     
+ 
+/*---------------------------------*/
+
+/*파도*/
+
+.ocean {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #1F3A93;
+}
+
+.wave {
+   background: url(img2/wave_test.png); repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  -webkit-animation: wave 8s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+          animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}    
+@-webkit-keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+@-webkit-keyframes swell {
+  0%, 100% {
+    -webkit-transform: translate3d(0, -5px, 0);
+            transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 5px, 0);
+            transform: translate3d(0, 5px, 0);
+  }
+}
+@keyframes swell {
+  0%, 100% {
+    -webkit-transform: translate3d(0, -25px, 0);
+            transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 5px, 0);
+            transform: translate3d(0, 5px, 0);
+  }
+}
+.wave:nth-of-type(2) {
+  top: -175px;
+  -webkit-animation: wave 5s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+          animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+/*---------------------------------*/
+     
+
+/*텍스트*/
+
+.slide-bottom1 {
+	-webkit-animation: slide-bottom1 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-bottom1 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes slide-bottom1 {
+  0% {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.slide-bottom2 {
+	-webkit-animation: slide-bottom2 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-bottom2 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes slide-bottom2 {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+/*---------------------------------*/
+
+/*버튼*/
+
+
+.jello-horizontal {
+	-webkit-animation: jello-horizontal 0.9s both;
+	        animation: jello-horizontal 0.9s both;
+}
+
+
+@-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+     
+
+</style>
+ 
+  </head>
+  <body>
+
+    <section id="home" class="hero-section-wrapper hero-section-wrapper-1">
+
+      <header class="header header-4">
+
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg">
+                  <a class="navbar-brand" href="wave-test2.html">
+                    <img src="img2/logo.png" alt="Logo" />
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </div>
+      </header>
+ 
+     
+<!----------------본문-->
+
+      <div class="hero-section hero-style-1">
+        <div class="container">
+          <div class="row">
+           
+            <div class="col-md-6">
+              <div class="hero-content-wrapper" style="text-align: center;">
+                <h2 class="slide-bottom1">BEGIN <span style="color:#FFCB00">START-UP</span> SAILING</h2>
+                
+                <h4 class=" slide-bottom2">연세대학교 온라인 창업상담창구</h4>
+                 <div class="button-box">
+                  <a href="http://175.211.133.210" rel="nofollow" target="_blank" class="button button-lg radius-50 jello-horizontal" style="margin-right: 30px">창업상담하기</a>
+                  <a href="http://175.211.133.210/login" rel="nofollow" target="_blank" class="button button-lg radius-50 jello-horizontal">관리자 로그인</a></div>
+              </div>
+            </div>
+            <div class="col-md-6 align-self-center">
+              <div class="hero-image slide-bottom1">
+                <img src="img2/humm.png" alt="">
+              </div>
+            </div>
+          </div>
+
+<!--
+        <div class="row mobile" style="padding-top: 50px;">
+
+            <div class="hero-content-wrapper" style="text-align: center;">
+             <div class="hero-image slide-bottom1">
+                <img src="img2/humm.png" alt="">
+              </div>
+                <h2 class="slide-bottom1">BEGIN <span style="color:#FFCB00">START-UP</span> SAILING</h2>
+                
+                <h4 class=" slide-bottom2">연세대학교 온라인 창업상담창구</h4>
+                 <div class="button-box">
+                  <a href="http://175.211.133.210" rel="nofollow" target="_blank" class="button button-lg radius-50 jello-horizontal" style="margin-right: 30px">창업상담하기</a>
+                  <a href="http://175.211.133.210/login" rel="nofollow" target="_blank" class="button button-lg radius-50 jello-horizontal">관리자 로그인</a></div>
+              </div>
+            
+        </div>
+-->
+
+        </div>
+        <div class="shapes">
+          
+          <img src="assets2/img/hero/hero-1/shape-2.svg" alt="" class="shape shape-2">
+          <img src="assets2/img/hero/hero-1/shape-3.svg" alt="" class="shape shape-3">
+          <img src="assets2/img/hero/hero-1/shape-4.svg" alt="" class="shape shape-4">
+
+
+        </div>
+      </div>
+      <!-- ========================= hero-1 end ========================= -->
+    </section>
+    
+    
+    <!-- ========================= about style-5 start ========================= -->
+    <footer class="footer footer-style-4 ">
+      <div class="ocean">
+          <div class="wave"></div>
+          <div class="wave"></div>
+      </div> 
+    </footer>
+
+    <a href="#" class="scroll-top"> <i class="lni lni-chevron-up"></i> </a>
+    
+    
+    <!-- ========================= JS here ========================= -->
+    <script src="assets2/js/bootstrap.5.0.0.alpha-2-min.js"></script>
+
+    <script src="assets2/js/wow.min.js"></script>
+    <script src="assets2/js/main.js"></script>
+
+<script>
+
+
+// Scroll Animation (sa, 스크롤 애니메이션)
+      const saTriggerMargin = 300;
+      const saElementList = document.querySelectorAll('.sa');
+
+      const saFunc = function() {
+        for (const element of saElementList) {
+          if (!element.classList.contains('show')) {
+            if (window.innerHeight > element.getBoundingClientRect().top + saTriggerMargin) {
+              element.classList.add('show');
+            }
+          }
+        }
+      }
+
+      document.addEventListener('load', saFunc);
+      document.addEventListener('scroll', saFunc);
+    
+/*-----------------------------------------------*/
+
+
+</script>
+
+  </body>
+</html>
