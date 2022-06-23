@@ -1,0 +1,450 @@
+/* ============================= 
+    폰트
+================================ */
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+
+/* ============================= 
+    COMMON CSS
+================================ */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Do Hyeon', sans-serif;
+  color: #1F3A93;
+}
+
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-out 0s;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  transition: all 0.3s ease-out 0s;
+}
+
+
+
+
+
+
+/* ============================= 
+    모바일 반응형
+================================ */
+
+
+@media (max-width: 767px) {
+    html, body{overflow: hidden;}
+
+/*전체 컨테이너*/    
+  .container {
+   padding: 0 20px;}      
+
+  }
+
+
+
+/*메인화면*/
+    
+  /*.pc-main{display: none;}
+  .mobile-main{display: block;}*/
+
+/*로고 크기*/    
+  .header.header-4 .navbar-brand img {
+    width: 180px;
+  }
+}
+
+
+/* ============================= 
+    TYPOGRAPHY CSS
+================================ */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 600;
+  color: #1F3A93;
+  margin-bottom: 0;
+  /*font-family: "Fira Sans", sans-serif;*/
+}
+
+h1, .h1 {
+  font-size: 60px;
+  letter-spacing: .7px;
+}
+
+h2, .h2 {
+  font-size: 55px;
+  letter-spacing: .7px;
+}
+
+h3, .h3 {
+  font-size: 40px;
+  letter-spacing: .4px;
+}
+
+h4, .h4 {
+  font-size: 30px;
+  letter-spacing: .35px;
+}
+
+h5, .h5 {
+  font-size: 24px;
+}
+
+h6, .h6 {
+  font-size: 20px;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.font-weight-semi-bold {
+  font-weight: 600;
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+.font-weight-regular {
+  font-weight: 400;
+}
+
+.font-weight-light {
+  font-weight: 300;
+}
+
+.body-font-size {
+  font-size: 16px;
+}
+
+.font-size-sm {
+  font-size: 14px;
+}
+
+.font-size-xs {
+  font-size: 12px;
+}
+
+.caption-font-size {
+  font-size: 14px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 0px;
+}
+
+/* ============================= 
+    BUTTONS CSS
+================================ */
+.button {
+  height: 44px;
+  font-size: 18px;
+  font-weight: 500;
+  box-sizing: border-box;
+  line-height: 1;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #1F3A93;
+  color: #ffffff;
+  border: 1px solid transparent;
+  position: relative;
+  z-index: 1;
+  padding: 0 25px;
+  overflow: hidden;
+}
+
+
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  padding: 50%;
+  border-radius: 50%;
+  margin: auto;
+  z-index: -1;
+  transition: all .4s linear;
+  transform: translate3d(-50%, -50%, 0) scale(0);
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #FFCB00;
+}
+
+.button:hover::before {
+  transform: translate3d(-50%, -50%, 0) scale(1.5);
+}
+
+.button-lg {
+  height: 64px;
+}
+
+.button-sm {
+  height: 34px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.button-box{margin-top: 50px;}
+
+
+/* ============================= 
+    HEADER-4 CSS
+================================ */
+.header {
+  background: #ffffff;
+  padding-top:10px;
+}
+
+
+.header.header-4 .navbar {
+  padding: 15px 0px 0px 0px;
+  border-radius: 0px;
+  position: relative;
+  transition: all 0.3s ease-out 0s;
+}
+
+
+
+
+.header.header-4 .navbar-brand {
+  padding: 0;
+}
+
+.header.header-4 .navbar-brand img {
+  max-width: 220px;
+}
+
+.header.header-4 .navbar-nav .nav-item {
+  position: relative;
+  margin-right: 40px;
+
+}
+
+
+
+.header.header-4 .navbar-nav .nav-item > a > ::after,
+.header.header-4 .navbar-nav .nav-item > a > ::before {
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  background: #2F80ED;
+  transition: all 0.3s ease-out 0s;
+}
+
+.header.header-4 .navbar-nav .nav-item > a::after {
+  top: 0;
+  left: 0;
+}
+
+.header.header-4 .navbar-nav .nav-item > a::before {
+  right: 0;
+  bottom: 0;
+}
+
+
+
+
+/* ============================= 
+    HERO-1 CSS
+================================ */
+.hero-section-wrapper-1 {
+  background: #ffffff;
+  position: relative;
+}
+
+.hero-section-wrapper-1 .header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: transparent;
+}
+
+
+.hero-section-wrapper-1 .hero-style-1 {
+  position: relative;
+  z-index: 1;
+  padding-top: 20px;
+}
+
+.hero-section-wrapper-1 .hero-style-1 .hero-content-wrapper {
+  padding: 300px 0;
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .hero-section-wrapper-1 .hero-style-1 .hero-content-wrapper {
+    padding: 100px 0;
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  .hero-section-wrapper-1 .hero-style-1 .hero-content-wrapper {
+    padding: 20px 0 20px;
+    text-align: center;
+  }
+}
+
+.hero-section-wrapper-1 .hero-style-1 .hero-content-wrapper h2 {
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .hero-section-wrapper-1 .hero-style-1 .hero-content-wrapper h2 {
+    font-size: 55px;
+    line-height: 65px;
+     margin-bottom: 10px; 
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .hero-section-wrapper-1 .hero-style-1 .hero-content-wrapper h2 {
+    font-size: 47px;
+    line-height: 58px;
+  }
+}
+
+@media (max-width: 767px) {
+
+   .hero-section-wrapper-1 .hero-style-1 .hero-content-wrapper h2{
+    font-size: 30px;
+    line-height: 55px;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px; 
+  }
+   .shapes{display: none;
+  }
+   .hero-section-wrapper-1 .hero-style-1 .hero-content-wrapper h4{
+      font-size: 28px;}
+    }
+
+
+
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  .hero-section-wrapper-1 .hero-style-1 .hero-content-wrapper h2 {
+    font-size: 47px;
+    line-height: 58px;
+  }
+}
+
+.hero-section-wrapper-1 .hero-style-1 .hero-content-wrapper p {
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.hero-section-wrapper-1 .hero-style-1 .hero-image {
+  margin-bottom: 100px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .hero-section-wrapper-1 .hero-style-1 .hero-image img {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .hero-section-wrapper-1 .hero-style-1 .hero-image img {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-section-wrapper-1 .hero-style-1 .hero-image img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-section-wrapper-1 .hero-style-1 .hero-image img {
+    max-width: 60%;
+    padding-top: 40px;
+    text-align: center;
+  }
+}
+
+@media(max-width:997px){
+  .footer-style-4 {
+    background: #fff;
+    padding-top: 0px;
+}
+
+}
+
+.hero-section-wrapper-1 .hero-style-1 .shapes .shape {
+  position: absolute;
+  z-index: -1;
+}
+
+.hero-section-wrapper-1 .hero-style-1 .shapes .shape.shape-1 {
+  right: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+.hero-section-wrapper-1 .hero-style-1 .shapes .shape.shape-2 {
+  top: 200px;
+  left: 49%;
+}
+
+.hero-section-wrapper-1 .hero-style-1 .shapes .shape.shape-3 {
+  left: 15%;
+  bottom: 120px;
+}
+
+.hero-section-wrapper-1 .hero-style-1 .shapes .shape.shape-4 {
+  left: 0;
+  bottom: 5%;
+}
+
+
+
+/* ============================= 
+    FOOTER-4 CSS
+================================ */
+.footer-style-4 {
+  background: #fff;
+        padding-top: 0px;
+}
+
+
+
+/* ============================= 
+    DEFAULT CSS
+================================ */
+.radius-3 {
+  border-radius: 3px;
+}
+
+.radius-10 {
+  border-radius: 10px;
+}
+
+.radius-30 {
+  border-radius: 30px;
+}
+
+.radius-50 {
+  border-radius: 50px;
+}
