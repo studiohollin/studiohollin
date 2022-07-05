@@ -1,0 +1,500 @@
+<html class="no-js" lang="">
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>main page last pang!</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img2/favicon_icon.ico"/>
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="assets2/css/bootstrap-5.0.0-alpha-2.min.css" />
+    <link rel="stylesheet" href="assets2/css/animate.css"/>
+    <link rel="stylesheet" href="assets2/css/base-style.css"/>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+ 
+
+     <style>
+/* ============================= 
+    폰트
+================================ */
+    @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+/* ============================= 
+    메인 CSS
+================================ */
+   body {
+        font-family: 'Do Hyeon', sans-serif;
+        color: #1F3A93;
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+        position: relative;
+        background: #fff;
+        overflow-x: hidden;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    header{
+        padding: 20px 0px;
+    }
+
+    a {
+      text-decoration: none;
+      transition: all 0.3s ease-out 0s;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }     
+
+    .pc-main-box{
+        display: block;
+        text-align: center;
+        padding: 70px 0px;
+    }
+    .mobile-main-box{display: none;}
+
+    .pc-main-box img{
+        width: 100%;
+        height: 100%;
+    }
+         
+         
+    .left-box{
+        padding-top: 100px;
+    }
+
+    .brand-logo a img{
+        width: 200px;
+    }    
+
+    .footer{
+         height: 143px;
+         width: 100%;
+         position: absolute;
+         bottom: 0;
+         left: 0;
+    }
+
+
+
+
+
+/* ============================= 
+    DEFAULT CSS
+================================ */
+    .radius-3 {
+      border-radius: 3px;
+    }
+
+    .radius-10 {
+      border-radius: 10px;
+    }
+
+    .radius-30 {
+      border-radius: 30px;
+    }
+
+    .radius-50 {
+      border-radius: 50px;
+    }
+
+/* ============================= 
+    텍스트
+================================ */
+
+    h1{
+     font-size: 48px;
+     font-weight: 800;
+     letter-spacing: .7px;
+    }
+
+    h4{
+     font-size: 30px;
+     letter-spacing: .35px;
+    }
+
+         
+    .slide-bottom1 {
+        -webkit-animation: slide-bottom1 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: slide-bottom1 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+
+    @-webkit-keyframes slide-bottom1 {
+      0% {
+        -webkit-transform: translateY(-200px);
+                transform: translateY(-200px);
+      }
+      100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+      }
+    }
+    @keyframes slide-bottom {
+      0% {
+        -webkit-transform: translateY(-150px);
+                transform: translateY(-150px);
+      }
+      100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+      }
+    }
+
+    .slide-bottom2 {
+        -webkit-animation: slide-bottom2 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: slide-bottom2 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+
+    @-webkit-keyframes slide-bottom2 {
+      0% {
+        -webkit-transform: translateY(-150px);
+                transform: translateY(-150px);
+      }
+      100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+      }
+    }
+    @keyframes slide-bottom {
+      0% {
+        -webkit-transform: translateY(-150px);
+                transform: translateY(-150px);
+      }
+      100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+      }
+    }
+
+
+/* ============================= 
+    파도
+================================ */
+
+     
+    section {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+
+    section .wave {
+        position: absolute;
+        width: 100%;
+        height: 143px;
+        background: url(wave3.png);
+        bottom: 0;
+        left: 0;
+        right: 0;
+        animation: animate 10s linear infinite;
+    }
+
+    section .wave:before {
+        content: '';
+        width: 100%;
+        height: 143px;
+        background: url(wave3.png);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.4;
+        animation: animate-reverse 10s linear infinite;
+    }
+
+    section .wave:after {
+        content: '';
+        width: 100%;
+        height: 143px;
+        background: url(wave3.png);
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.6;
+        animation-delay: -5s;
+        animation: animate 20s linear infinite;
+    }
+
+    @keyframes animate {
+        0%{
+            background-position: 0;
+        }
+        100% {
+            background-position: 1360px;
+        }
+    }
+
+    @keyframes animate-reverse {
+        0%{
+            background-position: 1360px;
+        }
+        100% {
+            background-position: 0;
+        }
+    }
+    
+
+
+/* ============================= 
+    버튼
+================================ */
+  
+    .button-box{
+        padding: 80px 0px 0px 0px;
+    }         
+    .button {
+      height: 44px;
+      font-size: 18px;
+      font-weight: 500;
+      box-sizing: border-box;
+      line-height: 1;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background: #1F3A93;
+      color: #ffffff;
+      border: 1px solid transparent;
+      position: relative;
+      z-index: 1;
+      padding: 0 25px;
+      overflow: hidden;
+      margin: 0px 10px;
+      transition: all 0.3s ease-out 0s;
+    }
+
+    .button::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      padding: 50%;
+      border-radius: 50%;
+      margin: auto;
+      z-index: -1;
+      transition: all .4s linear;
+      transform: translate3d(-50%, -50%, 0) scale(0);
+    }
+
+    .button:hover {
+      color: #fff;
+      background-color: #FFCB00;
+    }
+
+    .button:hover::before {
+      transform: translate3d(-50%, -50%, 0) scale(1.5);
+    }   
+
+
+    .button-lg {
+      height: 64px;
+    }
+
+    .button-sm {
+      height: 34px;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    /*버튼효과*/
+
+    .jello-horizontal {
+        -webkit-animation: jello-horizontal 0.9s both;
+                animation: jello-horizontal 0.9s both;
+    }
+
+
+    @-webkit-keyframes jello-horizontal {
+      0% {
+        -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+      }
+      30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+                transform: scale3d(1.25, 0.75, 1);
+      }
+      40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+                transform: scale3d(0.75, 1.25, 1);
+      }
+      50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+                transform: scale3d(1.15, 0.85, 1);
+      }
+      65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+                transform: scale3d(0.95, 1.05, 1);
+      }
+      75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+                transform: scale3d(1.05, 0.95, 1);
+      }
+      100% {
+        -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+      }
+    }
+    @keyframes jello-horizontal {
+      0% {
+        -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+      }
+      30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+                transform: scale3d(1.25, 0.75, 1);
+      }
+      40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+                transform: scale3d(0.75, 1.25, 1);
+      }
+      50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+                transform: scale3d(1.15, 0.85, 1);
+      }
+      65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+                transform: scale3d(0.95, 1.05, 1);
+      }
+      75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+                transform: scale3d(1.05, 0.95, 1);
+      }
+      100% {
+        -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+      }
+    }
+
+/*미디어쿼리 1200대신 1398px에서 틀어짐*/
+    
+    @media (max-width: 1398px) {
+        .pc-main-box img{width: 90%;}
+        .left-box{padding-top: 0px;}
+      
+    }
+
+/*미디어쿼리 태블릿*/
+    
+    @media (max-width: 991px) {
+        .pc-main-box img{width: 90%;}
+        .left-box{padding-top: 0px;}
+        .button{margin: 0px 5px; padding: 0px 15px;}
+        h1{font-size: 40px;}
+        .mobile-main-box{display: block;text-align: center;
+                        padding: 15px 0px 50px 0px;}
+        .left-box{padding-top: 2px;}
+        .pc-main-box{display: none;}
+        .mobile-main-box img{width: 90%;}
+    }
+
+
+/*미디어쿼리 모바일*/
+    
+    @media (max-width: 767px) {
+        header{padding: 25px 10px;}
+        .brand-logo a img{width: 180px;}
+        h1{font-size: 30px; margin-top: 10px;}
+        h4{font-size: 25px;}
+        .button-box{padding: 20px 0px 0px 0px;}         
+        .mobile-main-box{display: block;text-align: center;
+                        padding: 15px 0px 50px 0px;}
+        .left-box{padding-top: 2px;}
+        .pc-main-box{display: none;}
+        .mobile-main-box img{width: 85%;}
+    }
+
+    </style>
+    </head>
+    <body>
+      <header class="">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 brand-logo">
+              <a href="test.html">
+                <img src="img2/logo.png" alt="" class="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+     <!--PC 메인박스-->
+      <div class="container pc-main-box">
+      <div class="row">
+        <div class="col-lg-5 left-box">
+          <h1 class="slide-bottom1">BEGIN
+            <span style="color:#FFCB00">START-UP</span>
+              SAILING</h1>
+          <h4  class="slide-bottom2">연세대학교 온라인 창업상담창구</h4>
+
+          <div class="button-box">
+                  <a href="http://175.211.133.210" rel="nofollow" target="_blank" class="button button-lg radius-50 jello-horizontal" >창업상담하기</a>
+                  <a href="http://175.211.133.210/login" rel="nofollow" target="_blank" class="button button-lg radius-50 jello-horizontal">관리자 로그인</a>    
+          </div>
+          
+        </div>          
+        <div class="col-lg-7">
+           <div class="main-img slide-bottom1">
+               <img src="img2/humm.png" alt="">
+           </div>
+            
+        </div>          
+      </div>
+      </div>
+
+     
+     <!--모바일 메인박스-->
+      <div class="container mobile-main-box">
+      <div class="row">
+
+        <div class="col">
+           <div class="main-img slide-bottom1">
+               <img src="img2/humm.png" alt="">
+           </div>
+        <div class="col left-box">
+          <h1 class="slide-bottom1">BEGIN
+            <span style="color:#FFCB00">START-UP</span>
+              SAILING</h1>
+          <h4  class="slide-bottom2">연세대학교 온라인 창업상담창구</h4>
+
+          <div class="button-box">
+                  <a href="http://175.211.133.210" rel="nofollow" target="_blank" class="button button-lg radius-50 jello-horizontal" >창업상담하기</a>
+                  <a href="http://175.211.133.210/login" rel="nofollow" target="_blank" class="button button-lg radius-50 jello-horizontal">관리자 로그인</a>    
+          </div>
+          
+        </div>          
+
+            
+        </div>          
+      </div>
+      </div>
+
+ <footer class="footer">
+       <section>
+        <div class="wave"></div>
+       </section>
+ </footer>
+       
+       <!--
+        <section>
+            <div class="wave"></div>
+        </section>-->
+    </body>
+    </html>
